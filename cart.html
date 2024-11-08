@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-5">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">E-Ticaret</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-indigo-500">Ana Sayfa</a></li>
+                    <li><a href="products.html" class="hover:text-indigo-500">Ürünler</a></li>
+                    <li><a href="cart.html" class="hover:text-indigo-500">Sepet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sepet Bölümü -->
+    <section class="py-10 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">Sepetiniz</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sepet Ürün Kartı -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-semibold mb-2">Ürün Adı</h3>
+                    <p class="text-gray-700 mb-4">Ürün kısa açıklaması...</p>
+                    <p class="text-lg font-semibold text-indigo-600 mb-4">₺200.00</p>
+                    <button class="text-red-500 hover:text-red-700">Kaldır</button>
+                </div>
+                <!-- Daha fazla ürün kartı ekleyebilirsiniz -->
+            </div>
+            
+            <!-- Toplam Fiyat ve Satın Al Butonu -->
+            <div class="mt-10 flex justify-between items-center">
+                <p class="text-2xl font-semibold">Toplam: ₺600.00</p>
+                <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Satın Al</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

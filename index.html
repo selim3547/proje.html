@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-5">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">E-Ticaret</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-indigo-500">Ana Sayfa</a></li>
+                    <li><a href="products.html" class="hover:text-indigo-500">Ürünler</a></li>
+                    <li><a href="cart.html" class="hover:text-indigo-500">Sepet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Kategoriler -->
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">Kategoriler</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-100 p-5 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <a href="products.html" class="text-xl font-semibold text-indigo-600">Elektronik</a>
+                </div>
+                <div class="bg-gray-100 p-5 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <a href="products.html" class="text-xl font-semibold text-indigo-600">Giyim</a>
+                </div>
+                <div class="bg-gray-100 p-5 rounded-lg text-center hover:shadow-lg transition-shadow">
+                    <a href="products.html" class="text-xl font-semibold text-indigo-600">Ev Ürünleri</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Öne Çıkan Ürünler -->
+    <section class="py-10 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8">Öne Çıkan Ürünler</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Örnek Fotoğraf" width="400">
+                    <h3 class="text-xl font-semibold mb-2">Elektronik</h3>
+                    <p class="text-gray-700 mb-4">Akıllı Çamaşır Makinası ...</p>
+                    <p class="text-lg font-semibold text-indigo-600 mb-4">₺20.000</p>
+                    <a href="product-detail.html" class="text-indigo-500 hover:text-indigo-700">Detayları Gör</a>
+                </div>
+                <!-- Diğer ürünleri ekleyin -->
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
